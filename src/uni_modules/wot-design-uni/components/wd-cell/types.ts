@@ -84,7 +84,11 @@ export const cellProps = {
   /**
    * title 使用 slot 时的自定义样式
    */
-  customTitleClass: makeStringProp('')
+  customTitleClass: makeStringProp(''),
+  /**
+   * 右侧箭头 控制是否显示箭头
+   */
+  showArrow: makeBooleanProp(true)
 }
 
 export type CellProps = ExtractPropTypes<typeof cellProps>
